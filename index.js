@@ -6,13 +6,13 @@ const button = document.querySelector('button');
 // this is the function that is going to run everytime the 'Add item' button is clicked
 button.addEventListener('click', () => {
     // Here is saved the item as a string in the variable 'item'
-    const item = input.value;
+    var item = input.value;
     input.value = '';
 
     // here I created the 3 new elements that are going to be inside the list of items
-    const listItem = document.createElement('li');
-    const listText = document.createElement('span');
-    const listBt = document.createElement('button');
+    var listItem = document.createElement('li');
+    var listText = document.createElement('span');
+    var listBt = document.createElement('button');
 
     // append the span and button elements to the list, and then, set the text
     listItem.appendChild(listText);
